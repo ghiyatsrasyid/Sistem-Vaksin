@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="27fd0713-d637-413d-87be-0772ec3fec83">
+	<property name="ireport.zoom" value="1.610510000000001"/>
+	<property name="ireport.x" value="29"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from peserta]]>
+	</queryString>
+	<field name="nik" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_lahir" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_hp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_vak" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_vaksin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="4aa79e97-6673-4a65-b3e5-0c0f6da3aad1" x="311" y="28" width="189" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA PESERTA VAKSIN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="1e7899d4-b42d-4942-8d46-6fe0a44e0311" x="0" y="20" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e7899d4-b42d-4942-8d46-6fe0a44e0311" x="300" y="20" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[JNS KELAMIN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e7899d4-b42d-4942-8d46-6fe0a44e0311" x="100" y="20" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e7899d4-b42d-4942-8d46-6fe0a44e0311" x="200" y="20" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[TGL LHR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e7899d4-b42d-4942-8d46-6fe0a44e0311" x="400" y="20" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[NO HP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e7899d4-b42d-4942-8d46-6fe0a44e0311" x="500" y="20" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[STATUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e7899d4-b42d-4942-8d46-6fe0a44e0311" x="600" y="20" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[TGL VAKSIN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e7899d4-b42d-4942-8d46-6fe0a44e0311" x="700" y="20" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[NAMA VAKSIN]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="63f467da-c3c8-4ae3-8e4e-1e49198ebf4d" x="0" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5d784560-89aa-4be9-87ea-74c403f669b0" x="100" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="01a5413b-b176-4e21-91ea-eee135b74afc" x="200" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tgl_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="01a5413b-b176-4e21-91ea-eee135b74afc" x="300" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="01a5413b-b176-4e21-91ea-eee135b74afc" x="400" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{no_hp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="01a5413b-b176-4e21-91ea-eee135b74afc" x="500" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="01a5413b-b176-4e21-91ea-eee135b74afc" x="600" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tgl_vak}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="01a5413b-b176-4e21-91ea-eee135b74afc" x="700" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama_vaksin}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
